@@ -7,7 +7,7 @@ export function GeminiChat() {
     const [userInput, setUserInput] = useState<string>("")
     const [loading, setLoading] = useState<boolean>(false)
 
-    const API_KEY = "AIzaSyAurfcK_crrwAWP9uoj2HtmASLlHJOXnAg"
+    const API_KEY = process.env.API_KEY
 
     useEffect(() => {
         const startChat = async () => {
